@@ -56,42 +56,42 @@ namespace Semana11A2023.ViewModels
         }
 
         int resultadoResta;
-        public int resultadoRestar
+        public int ResultadoRestar
         {
-            get { return resultadoRestar; }
+            get { return resultadoResta; }
             set
             {
-                if (resultadoRestar != value)
+                if (resultadoResta != value)
                 {
-                    resultadoRestar = value;
+                    resultadoResta = value;
                     OnPropertyChanged();
                 }
             }
         }
 
         int resultadoMultiplicar;
-        public int resultadoMultiplica
+        public int ResultadoMultiplica
         {
-            get { return resultadoMultiplica; }
+            get { return resultadoMultiplicar; }
             set
             {
-                if (resultadoMultiplica != value)
+                if (resultadoMultiplicar != value)
                 {
-                    resultadoMultiplica = value;
+                    resultadoMultiplicar = value;
                     OnPropertyChanged();
                 }
             }
         }
 
         int resultadoDividir;
-        public int resultadoDivi
+        public int ResultadoDivi
         {
-            get { return resultadoDivi; }
+            get { return resultadoDividir; }
             set
             {
-                if (resultadoDivi != value)
+                if (resultadoDividir != value)
                 {
-                    resultadoDivi = value;
+                    resultadoDividir = value;
                     OnPropertyChanged();
                 }
             }
@@ -114,17 +114,17 @@ namespace Semana11A2023.ViewModels
 
             Restar = new Command(() =>
             {
-                resultadoRestar = ValorA - ValorB;
+                ResultadoRestar = ValorA - ValorB;
             });
 
-            Restar = new Command(() =>
+            Multiplica = new Command(() =>
             {
-                resultadoMultiplicar = ValorA * ValorB;
+                ResultadoMultiplica = ValorA * ValorB;
             });
 
             Dividir = new Command(() =>
             {
-                resultadoDividir = ValorA / ValorB;
+                ResultadoDivi = ValorA / ValorB;
             });
         }
     }
