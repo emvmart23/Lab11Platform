@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:Semana11A2023.ViewModels" x:DataType="viewmodels:ViewModelOperaciones"
              x:Class="Semana11A2023.Views.Operacions">
     <ContentPage.Content>
         <StackLayout>
@@ -17,11 +17,11 @@
 
             <Button Text="Multiplicar" Command="{Binding Multiplicar}"/>
             <Label  FontSize="Large"
-                Text="{Binding ResultadoMultiplicar}"></Label>
+                Text="{Binding ResultadoMultiplica}"></Label>
 
             <Button Text="Dividir" Command="{Binding Dividir}"/>
             <Label  FontSize="Large"
-                Text="{Binding ResultadoDividir}"></Label>
+                Text="{Binding ResultadoDivi}"></Label>
 
         </StackLayout>
     </ContentPage.Content>
